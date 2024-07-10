@@ -1,0 +1,289 @@
+:root {
+    font-size: 14px;
+
+}
+
+@media screen and (min-width:1400px) {
+
+    .container {
+        max-width: 1320px;
+
+
+    }
+
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        max-width: 576px;
+    }
+}
+
+/*xsml*/
+@media screen and (max-width:576px) {
+
+    .container {
+
+        padding-inline: 15px;
+    }
+
+
+}
+
+
+
+/*-------------Header*******************/
+
+
+@media screen and (min-width:1200px) {
+
+    header {
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+
+    header .container {
+
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    header .container>* {
+
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    header .container .header-content {
+        margin-top: 30px;
+    }
+
+    header .container .btn-main {
+        --border-raduis: 100vh;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+
+}
+
+
+/************nav********************/
+@media screen and (max-width:1200px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        transform: translateX(100%);
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        right: 0;
+        width: 400px;
+        bottom: 0;
+        height: 100%;
+        padding-inline: 20px;
+        gap: 0;
+
+
+
+    }
+
+    nav ul li {
+        padding-block: 10px;
+
+    }
+
+    ul li.menu-close {
+
+        display: block;
+    }
+
+}
+
+/**********************chefs*********************/
+
+@media screen and (max-width:992px) {
+    .chefs-crad .card {
+        width: calc(calc(100% - var(--gap)) / 2);
+
+
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .chefs-crad .card {
+        width: 100%
+    }
+}
+
+/***************Chefs***************/
+@media screen and (max-width:1400px) {
+
+    .gallery-image {
+        height: 1025px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .gallery-image {
+        height: 860px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .gallery-image {
+        height: 1970px;
+    }
+
+
+    .gallery-image picture {
+
+        width: calc(calc(100% - var(--gap)) / 2);
+
+    }
+
+    .pizaa {
+        order: 1;
+    }
+
+    .burger {
+        order: 2;
+    }
+
+    .pizaa-slice {
+        order: 3;
+    }
+
+    .omelette {
+        order: 4;
+    }
+
+    .steak {
+        order: 5;
+    }
+
+    .fried {
+        order: 6;
+    }
+
+    .kofta {
+        order: 7;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-image {
+        height: auto;
+    }
+
+    .gallery-image picture {
+        width: 100%
+    }
+}
+
+/******************************Contact***********/
+@media screen and (max-width:992px) {
+
+    .contact .input-group input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .contact-means>div {
+        width: 100%;
+
+
+    }
+}
+
+/*****************footer******************/
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    .footer .container {
+        flex-wrap: wrap;
+    }
+
+
+    footer .container :is(.about, .contact-details) {
+        width: calc(calc(100% - var(--gap) * 2  )/ 2);
+        order: 1;
+    
+    }
+
+    footer .container .subscrbtion {
+        width: 100%;
+        order: 2;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    footer .container :is(.about, .contact-details ,.subscrbtion ) {
+        width: 100%;
+        order: 0;
+        
+    
+    }
+
+ 
+}
